@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+        <title>Дз с дисплеями</title>
+        <style>
+             span {
+            color:red
+        }
+        .blockspan{
+            display:block
+        }
+        .inl{
+            display: inline;
+            padding: 1px;
+            background-color: greenyellow;
+            border: 1px solid;
+        }
+        .nav {
+        background-color: yellow; 
+        padding: 15px;
+        text-align: center;
+        }
+
+        .nav li {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px; 
+        }
+        .imitator{
+            display: run-in;
+            background-color: green;
+        }
+        .displaytable{
+            display:table;
+        }
+        .displaytable li{
+            display: table-cell;
+            background-color: aqua;
+        }
+        .invinsible{
+            display:none;
+        }
+        </style>
+    </head>
+    <body>
+       <div>это <span>строчный</span> span </div>
+       <div>это <span class = "blockspan">блочный</span> span </div> 
+       <div><p class = "inl">это строчное</p><p class = "inl">расположение элементов</p></div>
+       <ul class="nav">
+        <li>Это</li>
+        <li>Навигационная</li>
+        <li>Панель</li>           
+      </ul>
+      <div class = "imitator">блок имитирующий соседние элементы</div>
+      <ul class = "displaytable">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+      </ul>
+      <p class = "invinsible">вы это не увидете</p>
+    </body>    
+    
